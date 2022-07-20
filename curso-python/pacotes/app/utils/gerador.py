@@ -1,2 +1,4 @@
+from random import choice
+
 def novo_nome():
-    return "Fernando"
+    return choice(['Ana', 'Maria', 'Pedro', 'Rafael'])
