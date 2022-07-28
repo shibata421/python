@@ -7,6 +7,7 @@ parametros = dict(
     port=3306,
     user='root',
     passwd='root',
+    database='agenda'
 )
 
 @contextmanager
@@ -16,5 +17,4 @@ def nova_conexao():
         yield conexao
     finally:
         if conexao and conexao.is_connected():
-            print('finally')
             conexao.close()
