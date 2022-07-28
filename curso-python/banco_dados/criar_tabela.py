@@ -2,7 +2,7 @@ from db import nova_conexao
 from mysql.connector import ProgrammingError
 
 tabela_contatos = """
-    CREATE TABLE contatos(
+    CREATE TABLE IF NOT EXISTS contatos(
         nome VARCHAR(50),
         tel VARCHAR(40)
     )
